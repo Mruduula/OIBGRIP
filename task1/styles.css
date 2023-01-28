@@ -1,0 +1,57 @@
+body{
+  padding: 0;
+  margin-top: 5%;
+  background: rgb(77, 139, 200);
+}
+/* styles the particular division with class = 'calc' */
+.calc{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(236, 245, 251, 0.744);
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+/* styles the buttons on the webpage */
+.calc > button{
+  margin: 0.2pc;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: rgb(66, 101, 130);
+  background-color: rgb(163, 208, 250);
+}
+.calc > button:hover{
+  border: none;
+  color: rgb(19, 52, 86);
+  background-color: rgb(203, 229, 254);
+}
+/* styles the particular division with class = 'spantwo' */
+.spantwo{
+  grid-column: span 2;
+}
+/* styles the particular division with class = 'output' */
+.output{
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  grid-column: 1/-1;
+  background-color: rgba(86, 145, 200, 0.664);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* styles the subdivision = 'prevoperand' */
+.output .prevoperand{
+  font-size: 1.5rem;
+  font: bolder;
+  color: rgb(53, 100, 148);
+}
+/* styles the subdivision = 'curroperand' */
+.output .curroperand{
+  color: rgb(19, 52, 86);
+  font-size: 2.5rem;
+}
